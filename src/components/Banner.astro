@@ -1,20 +1,20 @@
 ---
-import bannerItem from '../banner.json'
+import projectItem from '../project.json'
 ---
 
 <section class="padding-48 color-primary">
   <div class="container">
-    <h2 class="margin-16 bottom">Thai Mod</h2>
+    <h2 class="margin-16 bottom title">New Release</h2>
   </div>
   <div class="container" data-auto-grid="3">
-    {bannerItem.map((banner, idx) => (
+    {projectItem.slice(0, 3).map((item, i) => (
       <a
         class="text-neutral-100 bg-neutral-900 radius-large elevation-500 banner-mod"
         data-animation="fade-in"
-        data-animation-delay={`${0.25*idx}s`}
-        style={`background-image: url('${banner.image}');`}
+        data-animation-delay={`${0.25*i}s`}
+        style={`background-image: url('${item.image}');`}
       >
-        <h6>{banner.title}</h6>
+        <h6>{item.title}</h6>
       </a>
     ))}
   </div>
@@ -24,6 +24,9 @@ import bannerItem from '../banner.json'
 </section>
 
 <style>
+	h2.title {
+		font-family: "Kanit";
+	}
   .banner-mod {
     background-size: cover;
     background-position: center;

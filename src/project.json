@@ -19,19 +19,19 @@
   },
   {
     "title": "Subnautica",
-    "image": "/banner/the-sims-medieval.jpg",
+    "image": "/banner/subnautica.jpg",
     "release": "2021-01-08T00:00:00.00+07",
     "updated": "2021-01-08T00:00:00.00+07"
   },
   {
     "title": "subnautica below zero",
-    "image": "/banner/the-sims-medieval.jpg",
+    "image": "/banner/subnautica-below-zero.jpg",
     "release": "2021-01-08T00:00:00.00+07",
     "updated": "2021-01-08T00:00:00.00+07"
   },
   {
     "title": "Beholder",
-    "image": "/banner/the-sims-medieval.jpg",
+    "image": "/banner/beholder.jpg",
     "release": "2021-01-08T00:00:00.00+07",
     "updated": "2021-01-08T00:00:00.00+07"
   },
@@ -43,13 +43,13 @@
   },
   {
     "title": "Cities: Skylines - Steam Workshop",
-    "image": "/banner/the-sims-medieval.jpg",
+    "image": "/banner/cities-skylines.jpg",
     "release": null,
     "updated": null
   },
   {
     "title": "Coral Island",
-    "image": "/banner/the-sims-medieval.jpg",
+    "image": "/banner/coral-island.jpg",
     "release": null,
     "updated": null
   }
