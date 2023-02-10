@@ -1,0 +1,38 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Banner from '../components/Banner.astro';
+const currentYear = new Date().getFullYear()
+---
+
+<DefaultLayout>
+	<section class="margin-48">
+		<div class="container logo">
+			<h1 style="text-transform: uppercase;">simscolony project <em>{currentYear}</em></h1>
+		</div>
+	</section>
+	<Banner />
+	<section class="margin-64">
+		<div class="container">
+			<div class="grid">
+				<div class="small-12 medium-3">
+					<div id="fb-root"></div>
+					<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v13.0&appId=220853631779161&autoLogAppEvents=1" nonce="OS6iwWi2"></script>
+						
+						<!--facebook หน้าเพจ! -->
+					<div class="fb-page" data-href="https://www.facebook.com/SimsColony/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/SimsColony/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SimsColony/">SimsColony</a></blockquote></div>
+				</div>
+				<div class="small-12 medium-8">
+					<h3>Main</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi mollitia alias sunt accusamus reiciendis fuga delectus, repellendus molestiae dolore illo iusto eligendi eaque qui hic facilis assumenda! Velit, minus, nobis. <strong><a href="#">And lastly tab to me</a></strong>.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi mollitia alias sunt accusamus reiciendis fuga delectus, repellendus molestiae dolore illo iusto eligendi eaque qui hic facilis assumenda! Velit, minus, nobis.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</DefaultLayout>
+
+<style>
+	.logo > h1 {
+		font-family: "Kanit";
+	}
+</style>

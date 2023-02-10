@@ -1,0 +1,40 @@
+---
+import bannerItem from '../banner.json'
+---
+
+<section class="padding-48 color-primary">
+  <div class="container">
+    <h2 class="margin-16 bottom">Thai Mod</h2>
+  </div>
+  <div class="container" data-auto-grid="3">
+    {bannerItem.map((banner, idx) => (
+      <a
+        class="text-neutral-100 bg-neutral-900 radius-large elevation-500 banner-mod"
+        data-animation="fade-in"
+        data-animation-delay={`${0.25*idx}s`}
+        style={`background-image: url('${banner.image}');`}
+      >
+        <h6>{banner.title}</h6>
+      </a>
+    ))}
+  </div>
+  <div class="container margin-16 top">
+    <a href="#" class="button">More...</a>
+  </div>
+</section>
+
+<style>
+  .banner-mod {
+    background-size: cover;
+    background-position: center;
+    min-height: 195px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .banner-mod > h6 {
+    background-color: #00000057;
+    width: 100%;
+    padding: .2em .1em;
+    font-size: 1rem;
+  }
+</style>
